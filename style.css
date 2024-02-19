@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+	background-image: url(https://wallpaperbat.com/img/629480-blue-computer-wallpaper-top-free-blue-computer-background.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h2 {
+    font-size: 35px;
+	padding: 5px;
+	margin: 2px;
+	font-style: italic;
+	text-shadow: 1.7px 1.5px #4c6c86;
+
+  }
+  
+  .main {
+    width: 30%;
+    height: 70%;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .main .input {
+    width: 90%;
+    padding: 8px 25px;
+    border: 3px solid #9e9e9e;
+    outline: none;
+    margin: 15px ;
+  }
+  .main .input:focus {
+    border: 3px solid #160344;
+  }
+  .btn,
+  .input {
+    font-size: 1.1rem;
+    border-radius: 5px;
+  }
+  .main .btn {
+    width: 90%;
+    padding: 12px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #1d0885;
+    color: #fff;
+    transition: 0.3s;
+  }
+  .main .code {
+    margin: 10px 0;
+  }
+  
+  .main .btn:hover {
+    box-shadow: 0 15px 25px -10px #160891;
+  }
+  
+  #toast {
+    position: absolute;
+    bottom: 0;
+    border-radius: 5px;
+    padding: 10px 50px;
+    background: #b9c3cd;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 0 10px 25px -10px #080350;
+    transition: 0.3s;
+    font-size: 20px;
+  }
+
+  #toast.show {
+    visibility: visible;
+    opacity: 1;
+    bottom: 50px;
+  }
+  
+@media (max-width: 768px) {
+	.main {
+	  width: 70%;
+	}
+  }
